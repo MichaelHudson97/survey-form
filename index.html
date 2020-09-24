@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"></p>
+        <form id="survey-form">
+            <div class="form-group">
+                 <label id="name-label" for="name">Name:</label>
+                 <input id="name" name="name" type="text" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="johndoe@gmail.com" required />
+            </div>
+            <div class="form-group">
+                <label id="age-label" for="age">Age:</label>
+                <input id="age" type="number" name="age" min="1" max="99" placeholder="18" required />
+            </div>
+            <div class="form-group">
+                <label for="planets">Pick a destination</label>
+                <select id="planets" name="planets">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="mercury">Mercury</option>
+                    <option value="venus">Venus</option>
+                    <option value="earth">Earth</option>
+                    <option value="mars">Mars</option>
+                    <option value="jupiter">Jupiter</option>
+                    <option value="saturn">Saturn</option>
+                    <option value="uranus">Uranus</option>
+                    <option value="neptune">Neptune</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <span class="label">Is Pluto a Planet?</span>
+                <span class="radio-group"> 
+                    <input type="radio" id="yes" name="answer" value="yes" />
+                    <label for="yes">Yes</label>
+                    <br>
+                    <input type="radio" id="no" name="answer" value="no" />
+                    <label for="no">No</label>
+                    <br>
+                    <input type="radio" id="world" name="answer" value="world" />
+                    <label for="world">The world may never know</label>
+                </span>
+            </div>
+            <div class="form-group">
+                <span class="label">How would you like to travel?</span>
+                <span class="checkbox-group">
+                    <input type="checkbox" id="shuttle" name="transportation" value="shuttle" />
+                    <label for="shuttle">Nasa's Endeavour Shuttle</label>
+                    <br>
+                    <input type="checkbox" id="dragon" name="transportation" value="dragon" />
+                    <label for="dragon">SpaceX Dragon</label>
+                    <br>
+                    <input type="checkbox" id="teleport" name="transportation" value="teleport" />
+                    <label for="teleport">Teleport</label>
+                </span>
+            </div>
+            <div class="form-group">
+                <p class="textarea-label">What's your favorite thing about space?</p>
+                <textarea id="fav"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
